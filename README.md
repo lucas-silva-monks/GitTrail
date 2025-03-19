@@ -121,6 +121,36 @@ Os conflitos ocorrem quando há alterações incompatíveis em diferentes branch
 4. Finalize a mesclagem com `git commit` ou `git rebase --continue`.
 5. Se necessário, utilize `git merge --abort` ou `git rebase --abort` para cancelar o processo.
 
+## Criando um comando próprio no Git
+Você pode criar um comando personalizado no Git utilizando **aliases**. Isso permite criar atalhos para comandos longos ou complexos.
+
+#### Criando o comando `git adog`
+O comando `git adog` pode ser definido como um alias para `git log --all --oneline --graph --decorate`. Para isso, basta executar:
+
+```sh
+git config --global alias.adog "log --all --oneline --graph --decorate"
+```
+
+Agora, sempre que você rodar:
+```sh
+git adog
+```
+O Git executará `git log --all --oneline --graph --decorate`, exibindo o histórico do repositório de forma visual e resumida.
+
+#### Onde isso é salvo?
+O alias é salvo no arquivo de configuração global do Git (`~/.gitconfig`). Para visualizar os aliases configurados, use:
+
+```sh
+git config --global --list
+```
+
+#### Removendo o alias
+Caso queira remover o alias posteriormente, utilize:
+
+```sh
+git config --global --unset alias.adog
+```
+
 ## Recursos Úteis
 - [Oh Shit, Git!?!](https://ohshitgit.com/) - Guia rápido para sair de situações complicadas no Git.
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/?authuser=0) - Padrão para mensagens de commit bem estruturadas.
