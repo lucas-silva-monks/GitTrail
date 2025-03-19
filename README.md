@@ -124,6 +124,7 @@ Os conflitos ocorrem quando há alterações incompatíveis em diferentes branch
 ## Recursos Úteis
 - [Oh Shit, Git!?!](https://ohshitgit.com/) - Guia rápido para sair de situações complicadas no Git.
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/?authuser=0) - Padrão para mensagens de commit bem estruturadas.
+- [Learn Git Branching](https://learngitbranching.js.org/?locale=pt_BR&authuser=0) - Uma ferramenta interativa para aprender e visualizar comandos Git, focando principalmente em branching, merging e rebase de forma prática e intuitiva.
 
 ---
 Esse guia fornece uma visão abrangente do Git. Para mais detalhes, consulte a [documentação oficial do Git](https://git-scm.com/doc).
